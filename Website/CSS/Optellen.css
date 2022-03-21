@@ -58,3 +58,11 @@ footer{
     width: 3rem;
     padding: 2%;
 }
+
+table{
+    margin: 5%;
+}
+
+td{
+    padding: 10px;
+}
