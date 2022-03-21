@@ -23,6 +23,7 @@ header{
     justify-content: flex-start;
     width: 25%;
     padding-left: 20%;
+    cursor: pointer;
 }
 
 #nav a{
