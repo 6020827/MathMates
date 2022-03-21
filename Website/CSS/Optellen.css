@@ -60,9 +60,12 @@ footer{
 }
 
 table{
-    margin: 5%;
+    margin: 12%;
 }
 
 td{
-    padding: 10px;
+    padding-left: 15px;
+}
+input{
+    padding: 5px;
 }
