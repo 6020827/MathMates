@@ -1,9 +1,4 @@
-
-
-const num1 = document.getElementById("number1").value;
-const num2 = 3;
-
-const sum = num1 + num2;
-
-console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
-
+function myFunction(){
+    optellen.antwoord.value = optellen.num1.value + "**" + optellen.num2.value;
+    optellen.antwoord.value = eval(optellen.antwoord.value);
+} 
