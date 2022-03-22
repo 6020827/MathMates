@@ -1,7 +1,9 @@
-function optellen(){
-    if(){
-        let number = document.getElementById("number1").value;
-        document.getElementById("")
-    }
-}
-document.getElementById("button").addEventListener("click", optellen);
+
+
+const num1 = document.getElementById("number1").value;
+const num2 = 3;
+
+const sum = num1 + num2;
+
+console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
+
