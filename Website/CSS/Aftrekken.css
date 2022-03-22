@@ -59,3 +59,35 @@ footer{
     width: 3rem;
     padding: 2%;
 }
+
+table{
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+td{
+    padding-left: 15px;
+}
+
+input{
+    padding: 5px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #68267f;
+}
+
+#button{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1{
+    font-size: 80px;
+    margin-left: 180px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #68267f;
+}
+
+#plaatje{
+    margin-right: 15%;
+    float: right;
+}
