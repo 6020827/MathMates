@@ -39,8 +39,22 @@ header{
     width: 50%;
 }
 
-#nav a:hover{
+.navbar a:hover{
     text-decoration: underline;
+    font-size: x-large;
+}
+
+.navbar :hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.dropbtn :hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.dropbtn a{
     font-size: x-large;
 }
 
@@ -84,14 +98,14 @@ footer{
     padding: 2%;
 }
 
-/* Navbar container */
 .navbar {
     overflow: hidden;
     background-color: White;
     font-family: Arial;
+    text-decoration: underline;
+    font-size: x-large;
   }
-  
-  /* Links inside the navbar */
+
   .navbar a {
     float: left;
     font-size: 16px;
@@ -99,17 +113,16 @@ footer{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: x-large;
   }
-  
-  /* The dropdown container */
+
   .dropdown {
     float: left;
     overflow: hidden;
   }
   
-  /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: x-large;
     border: none;
     outline: none;
     color: #e73b55;
@@ -119,7 +132,6 @@ footer{
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -129,7 +141,6 @@ footer{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
   .dropdown-content a {
     float: none;
     color: black;
@@ -138,13 +149,11 @@ footer{
     display: block;
     text-align: left;
   }
-  
-  /* Add a grey background color to dropdown links on hover */
+
   .dropdown-content a:hover {
     background-color: #ddd;
   }
   
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
