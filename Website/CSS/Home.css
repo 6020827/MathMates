@@ -89,10 +89,10 @@ footer{
 .navbar {
     overflow: hidden;
     background-color: White;
-    font-family: Arial;
+    font-family: 'Maven Pro', sans-serif;
     text-decoration: underline;
     font-size: x-large;
-    width: 50%;
+    width: 60%;
 }
 
 .navbar a {
@@ -122,7 +122,10 @@ footer{
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-    margin-left: 15%;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    padding-left: 90px;
+    width: 110%;
 }
   
 .dropdown-content {
@@ -136,7 +139,7 @@ footer{
   
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #e73b55;;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
