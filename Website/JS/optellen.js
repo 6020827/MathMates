@@ -1,7 +1,4 @@
-function optellen(){
-    if(){
-        let number = document.getElementById("number1").value;
-        document.getElementById("")
-    }
-}
-document.getElementById("button").addEventListener("click", optellen);
+function myFunction(){
+    optellen.antwoord.value = optellen.num1.value + "+" + optellen.num2.value;
+    optellen.antwoord.value = eval(optellen.antwoord.value);
+} 
