@@ -25,30 +25,6 @@ header{
     cursor: pointer;
 }
 
-#main{
-    font-family: 'Maven Pro', sans-serif;
-    display: flex;
-    width: 100%;
-    column-gap: 5%;
-    font-size: large;
-}
-
-#text{
-    flex: 3;
-    padding: 9%;
-    color: #68267f;
-}
-
-#h1{
-    font-size: 300%;
-    text-decoration: underline;
-}
-
-#image{
-    flex: 2;
-    padding-top: 4%;
-}
-
 footer{ 
     min-height: 75px;
 }
@@ -153,3 +129,27 @@ footer{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#main{
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    width: 100%;
+    column-gap: 5%;
+    font-size: large;
+}
+
+form{
+    margin-left: 20%;
+}
+
+#plus{
+    float: right;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+#text{
+    color: purple;
+}
+
+
