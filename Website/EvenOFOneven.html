@@ -38,15 +38,14 @@
         </header>
         <main>
             <h1>Even OF Oneven</h1>
-            <form action="#">
-                <table>
-                    <tr>
-                        <td><input id="number1" type="number" name="optellen"></td>
-                        <td><input id="number2" type="number" name="optellen"></td>
-                        <td><input id="button" type="submit" value="Calculate"></td>
-                    </tr>
-                </table>
+            <form name="evenofoneven">
+                    <input id="number1" type="number" name="num1">
+                    <!-- <input id="number1" type="number" name="num2"> -->
+                    <input id="button" type="button" value="Controleren" onClick="myFunction()">
+                    <input type="text" readonly name="antwoord">
             </form>  
+            <span id="x"></span>
+
             <article id="plaatje">
                 <img src="Images/" alt="Even OF Oneven">
             </article>
@@ -62,5 +61,5 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
+    <script src="JS/even-oneven.js"></script>
 </html>
