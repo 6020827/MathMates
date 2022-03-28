@@ -241,6 +241,9 @@ footer{
 .dropdown2:hover .dropdown-content2 {
     display: block;}
 
+form{
+    margin-left: 20%;
+}
 
 #min{
     float: right;
