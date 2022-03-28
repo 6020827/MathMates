@@ -130,13 +130,7 @@ footer{
     display: block;
 }
 
-#main{
-    font-family: 'Maven Pro', sans-serif;
-    display: flex;
-    width: 100%;
-    column-gap: 5%;
-    font-size: large;
-}
+
 
 form{
     margin-left: 20%;
