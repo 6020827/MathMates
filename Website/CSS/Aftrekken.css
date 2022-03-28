@@ -153,6 +153,94 @@ footer{
     display: block;
 }
 
+.navbar2 a:hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.navbar2 :hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.dropbtn2 :hover{
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.dropbtn2 a{
+    font-size: x-large;
+    padding-left: 15%;
+    padding: 14px 16px;
+}
+
+.navbar2 {
+    overflow: hidden;
+    background-color: White;
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: underline;
+    font-size: x-large;
+    width: 60%;
+}
+
+.navbar2 a {
+    font-family: 'Maven Pro', sans-serif;
+    float: left;
+    font-size: 130%;
+    font-weight: bold;
+    color: #e73b55;
+    text-align: center;
+    padding: 14px 16px;
+    padding-left: 15%;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.dropdown2 {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown2 .dropbtn2 {
+    font-size: x-large;
+    border: none;
+    outline: none;
+    color: #e73b55;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    padding-left: 90px;
+    width: 110%;
+}
+  
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content2 a {
+    float: none;
+    color: #e73b55;;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown2:hover .dropdown-content2 {
+    display: block;}
+
 form{
     margin-left: 20%;
 }
