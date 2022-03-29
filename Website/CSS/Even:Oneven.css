@@ -160,7 +160,8 @@ form{
 #evenofoneven{
     float: right;
     margin-right: 5%;
-    margin-top: 10%;
+    margin-top: 2%;
+    width: 30%;
 }
 
 #text{
