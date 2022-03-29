@@ -1,14 +1,9 @@
-/* program to generate a multiplication table
-upto a range */
 
-// take number input from the user
-const number = parseInt(prompt('Enter an integer: '));
-
-// take range input from the user
-const range = parseInt(prompt('Enter a range: '));
-
-//creating a multiplication table
-for(let i = 1; i <= range; i++) {
-    const result = i * number;
-    console.log(`${number} * ${i} = ${result}`);
+function myFunction(){
+    document.getElementById('result').innerHTML= "";
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    for(i = 0; i <= num2; i++){
+     document.getElementById("result").innerHTML += "<br>" + num1 * i + "<br>";
+    }
 }

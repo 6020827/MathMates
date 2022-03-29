@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Optellen.css">
+        <link rel="stylesheet" type="text/css" href="CSS/tafels.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -38,16 +38,18 @@
         </header>
         <main>
             <h1 id="text">Tafels</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">
-                <input id="number2" type="number" name="num2">
+
+            <form name="tafels">
+                <input id="firstNumber" type="number" name="num1">
+                <input id="secondNumber" type="number" name="num2">
                 <input id="button" type="button" value="Calculate" onClick = "myFunction()">
+                <span id = "result"></span>
                 
             </form>  
-            <span id="x"></span>
+                
 
             <article id="plaatje">
-                <img id="plus" src="" alt="">
+                <img id="tafels" src="" alt="">
             </article>
         </main>
         <footer>
@@ -61,5 +63,5 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
+    <script src="JS/Tafels.js"></script>
 </html>
