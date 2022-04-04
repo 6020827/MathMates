@@ -157,10 +157,12 @@ form{
     margin-left: 20%;
 }
 
-#min{
+#breuken{
     float: right;
     margin-right: 5%;
     margin-top: 10%;
+    width: 30%;
+    height: 30%;
 }
 
 #text{
