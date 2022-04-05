@@ -1,4 +1,3 @@
-
 function myFunction(){
     document.getElementById('result').innerHTML= "";
     num1 = document.getElementById("firstNumber").value;
