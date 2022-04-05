@@ -38,10 +38,10 @@
         </header>
         <main>
             <h1 id="text">Even Of Oneven</h1>
-            <form name="evenofoneven">
-                    <input id="number1" type="number" name="num1">
-                    <input id="button" type="button" value="Controleren" onClick="myFunction()">
-                    <input id="textbox" type="text" readonly name="antwoord">
+            <form name="rekenmachine">
+                <input type="number" name="num1" required value="0" id="veld1">
+                <input type="button" value="Bereken" onclick="rekenmachine.ant.value = rekenmachine.num1.value + '%' + '2'; rekenmachine.ant.value = eval(rekenmachine.ant.value);leukeNaam()"id = "bereken1">
+                <input type="text" readonly name="ant" id="ant">
             </form>  
             <span id="x"></span>
 
@@ -60,5 +60,13 @@
             </section>
         </footer>
     </body>
-    <script src="JS/even-oneven.js"></script>
+    <script>
+        function leukeNaam() {
+            if(rekenmachine.ant.value == 0){
+                rekenmachine.ant.value = 'even';
+            }else{
+                rekenmachine.ant.value = 'oneven';
+            }
+        }
+    </script>
 </html>
