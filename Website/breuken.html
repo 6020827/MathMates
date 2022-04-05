@@ -38,12 +38,12 @@
         </header>
         <main>
             <h1 id="text">Breuken</h1>
-            <form name="breuken">
-                <input id="number1" type="number" name="num1">Maximale Breuk<br>
-                <input id="button" type="button" value="Calculate" onClick = "myFunction()">
-                <span id = "result"></span>
+            <form name="rekenmachine">
+                <input type="number" name="num1" required value="0" id="veld1">
+                <input type="button" value="Bereken" onclick="myFunction()"id = "bereken1">
+            </form>
 
-            </form>  
+            <span id="ant"></span>
 
             <article id="plaatje">
                 <img id="breuken" src="Images/breuken.png" alt="Breuken">
@@ -60,5 +60,12 @@
             </section>
         </footer>
     </body>
-    <script src="JS/breuken.js"></script>
+    <script>
+        function myFunction() {
+            for (i=1;i<=rekenmachine.num1.value;i++) {
+                var x = 1/i;
+                document.getElementById("ant").innerHTML += "1 / " + i + " = " + x + "<br>";
+            }
+        }
+    </script>
 </html>

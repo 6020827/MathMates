@@ -54,12 +54,12 @@
         </header>
         <main>
             <h1 id="text">Restwaarde</h1>
-            <form name="restwaarde">
-                <input id="number1" type="number" name="num1">
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Rest" onClick = "myFunction()">
-                <input id="textbox" type="text" readonly name="antwoord">
-            </form>  
+            <form name="rekenmachine"">
+                <input type="number" name="num1" required value="0" id="veld1">
+                <input type="number" name="num2" required value="0" id="veld2">
+                <input type="button" value="Bereken" onclick="(rekenmachine.ant.value = rekenmachine.num1.value + '%' + rekenmachine.num2.value) (rekenmachine.ant.value = eval(rekenmachine.ant.value))"id = "bereken1">
+                <input type="text" readonly name="ant" id="ant">
+            </form> 
             <span id="x"></span>
 
             <article id="plaatje">
@@ -77,5 +77,4 @@
             </section>
         </footer>
     </body>
-    <script src="JS/restwaarde.js"></script>
 </html>
