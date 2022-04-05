@@ -38,13 +38,12 @@
         </header>
         <main>
             <h1 id="text">Machten</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Calculate" onClick = "myFunction()">
-                
-            </form>  
-            <span id="x"></span>
+            <form name="rekenmachine">
+                <input type="number" name="num1" required value="0" id="veld1">
+                <input type="number" name="num2" required value="0" id="veld2">
+                <input type="button" value="Bereken" onclick="myFunction()"id = "bereken1">
+            </form>
+            <span id="ant"></span>
 
             <article id="plaatje">
                 <img id="Machten" src="" alt="">
@@ -61,5 +60,17 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
+    <script>
+        function myFunction() {
+        document.getElementById("ant").innerHTML = ""
+        var x = rekenmachine.num1.value 
+        var y = 0
+
+        while (y <= rekenmachine.num2.value) {
+        document.getElementById("ant").innerHTML += x**y + "<br>";
+         y++
+}
+    }
+    </script>
+
 </html>
