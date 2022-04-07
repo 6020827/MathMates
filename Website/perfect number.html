@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Optellen.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Perfect number.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -55,21 +55,40 @@
                     </div>
                 </div>
             </div>
+
             
         </header>
-        <main>
-            <h1 id="text">Plus</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">+
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Optellen" onClick = "myFunction()">
-                <input id="textbox" type="text" readonly name="antwoord">
-            </form>  
+        <form name="rekenmachine">
+            <input type="number" name="num1" value="0" required id="veld1">
+            <input type="button" value="Bereken" onclick="myFunction()"id = "bereken1">
+            <input type="text" readonly name="ant">
+            <div class="minnetje"><h1>Perfect Number</h1></div>
+            <div class="berekening2"><h1>Berekening</h1></div>
+            <div class="antwoord"><h1>Perfect number of niet?</h1></div>
+        </form>
+        <script>
+            function myFunction() {
+                rekenmachine.ant.value = ""
+                for (i=0;i<rekenmachine.num1.value;i++) {
+                    if (rekenmachine.num1.value % i == 0) {
+                        if (rekenmachine.ant.value != "") {
+                            rekenmachine.ant.value += "+"
+                        }
+                        rekenmachine.ant.value += i
+                    }
+                }
+                if (eval(rekenmachine.ant.value) == rekenmachine.num1.value) {
+                    document.getElementById('ant').innerHTML = rekenmachine.num1.value + " is een perfect number"
+                } else {
+                    document.getElementById('ant').innerHTML = rekenmachine.num1.value + " is geen perfect number"
+                }
+            }
+        </script>
             <span id="x"></span>
 
-            <article id="plaatje">
-                <img id="plus" src="Images/plus1.png" alt="plus">
-            </article>
+            <article id="plaatje"> 
+                <img id="perfect" src="Images/Min.png" alt="perfect"> 
+            </article>           
         </main>
         <footer>
             <section id="footer">
@@ -82,5 +101,5 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
 </html>
+

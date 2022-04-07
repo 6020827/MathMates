@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Optellen.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Aftrekken.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -58,18 +58,46 @@
             
         </header>
         <main>
-            <h1 id="text">Plus</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">+
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Optellen" onClick = "myFunction()">
-                <input id="textbox" type="text" readonly name="antwoord">
-            </form>  
+            <h1 id="text">Talstelsels</h1>
+            <form name="rekenmachine">
+                <input type="text" required value="0" name="num1" id="veld1">
+        
+                <div class="Base1">
+                <select name="vanBase">
+                    <option value="2">Binair</option>
+                    <option value="16">Hexa Decimaal</option>
+                    <option value="8">Octaal</option>
+                    <option value="10">Decimaal</option>
+                </select>
+            </div>
+        
+            <div class="Base2">
+                <select name="naarBase">
+                    <option value="2">Binair</option>
+                    <option value="16">Hexa Decimaal</option>
+                    <option value="8">Octaal</option>
+                    <option value="10">Decimaal</option>
+                </select>
+            </div>
+                <div class="vantxt"><h1>Van</h1></div>
+                <div class="naartxt"><h1>Naar</h1></div>
+                <input type="button" value="Bereken" onclick="myFunction()"id = "bereken1">
+            </form>
+        
+            <script>
+                function myFunction() {
+                    let a = rekenmachine.vanBase.value
+                    let y = parseInt(rekenmachine.num1.value, a)
+                    let x = rekenmachine.naarBase.value
+                    let z = y.toString(x)
+                    document.getElementById('ant').innerHTML = z
+                }
+            </script>
             <span id="x"></span>
 
-            <article id="plaatje">
-                <img id="plus" src="Images/plus1.png" alt="plus">
-            </article>
+            <article id="plaatje"> 
+                <img id="tal" src="Images/Min.png" alt="Talstelsel"> 
+            </article>           
         </main>
         <footer>
             <section id="footer">
@@ -82,5 +110,4 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
 </html>

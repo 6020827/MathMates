@@ -172,7 +172,7 @@ form{
     margin-left: 20%;
 }
 
-#min{
+#priem{
     float: right;
     margin-right: 5%;
     margin-top: 10%;
@@ -207,20 +207,4 @@ form{
 
 #textbox{
     padding: 7px;
-}
-
-#ant {
-	left: 5%;
-	width: 25%;
-	background-color: #00000055;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	border-radius: 15px;
-	position: absolute;
-	top: 70%;
-	min-height: 15%;
 }

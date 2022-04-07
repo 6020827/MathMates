@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Optellen.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Collatz.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -55,21 +55,43 @@
                     </div>
                 </div>
             </div>
+
             
         </header>
         <main>
-            <h1 id="text">Plus</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">+
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Optellen" onClick = "myFunction()">
-                <input id="textbox" type="text" readonly name="antwoord">
-            </form>  
+            <h1 id="text">Collatz conjucture</h1>
+            <form name="rekenmachine">
+                <input type="number" required value="0" name="num1" id="veld1">
+                <input type="button" value="bereken" onclick="myFunction()"id = "bereken1">
+                <div class="minnetje"><h1>Collatz conjucture</h1></div>
+            </form>
+            <script>
+                function myFunction() {
+                    document.getElementById('antwoord').innerHTML = "";
+                    var x = rekenmachine.num1.value;
+                    var y = 0;
+                    var w = 0;
+                    var d = true;
+                    while (d) {
+                        if (x % 2 == 0) {
+                            y = x / 2;
+                            document.getElementById('antwoord').innerHTML += x + "/" + 2 + "=" + y + "<br>";
+                            x = x / 2;
+                        } else if (x != 1) {
+                            w = x * 3 + 1;
+                            document.getElementById("antwoord").innerHTML += x + "*" + 3 + "+" + 1 + "=" + w + "<br>";
+                            x = x * 3 + 1;
+                        } else if (x == 1) {
+                            d = false;
+                        }
+                    }
+                }
+            </script>
             <span id="x"></span>
 
-            <article id="plaatje">
-                <img id="plus" src="Images/plus1.png" alt="plus">
-            </article>
+            <article id="plaatje"> 
+                <img id="coll" src="Images/Min.png" alt="coll"> 
+            </article>           
         </main>
         <footer>
             <section id="footer">
@@ -82,5 +104,5 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
 </html>
+

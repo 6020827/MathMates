@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Optellen.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Aftrekken.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -55,21 +55,42 @@
                     </div>
                 </div>
             </div>
+
             
         </header>
         <main>
-            <h1 id="text">Plus</h1>
-            <form name="optellen">
-                <input id="number1" type="number" name="num1">+
-                <input id="number2" type="number" name="num2">
-                <input id="button" type="button" value="Optellen" onClick = "myFunction()">
-                <input id="textbox" type="text" readonly name="antwoord">
-            </form>  
+            <h1 id="text">Priemgetallen</h1>
+            <form name="rekenmachine">
+                <input type="number" name="num1" required value="0"  id="veld1">
+                <input type="button" value="bereken" onclick="myFunction()"id = "bereken1">
+                <div class="minnetje"><h1>Priemgetallen</h1></div>
+            </form>
+            <script>
+            function myFunction() {
+                    var priem = []
+                    var check = true
+                    for (i=2;i<rekenmachine.num1.value;i++){
+                        check = true
+                        for (x=0;x<priem.length;x++){
+                            if(i % priem[x] == 0) {
+                                x=priem.length
+                                check=false
+                            }
+                        }
+                        if (check){
+                            priem.push(i)
+                        }
+                    }
+                    for(i=0;i<priem.length;i++) {
+                        document.getElementById('antwoord').innerHTML += priem[i] + "<br>"
+                    }
+                }
+            </script>
             <span id="x"></span>
 
-            <article id="plaatje">
-                <img id="plus" src="Images/plus1.png" alt="plus">
-            </article>
+            <article id="plaatje"> 
+                <img id="priem" src="Images/Min.png" alt="Priem"> 
+            </article>           
         </main>
         <footer>
             <section id="footer">
@@ -82,5 +103,5 @@
             </section>
         </footer>
     </body>
-    <script src="JS/optellen.js"></script>
 </html>
+
