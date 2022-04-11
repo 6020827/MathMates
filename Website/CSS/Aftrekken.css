@@ -261,3 +261,19 @@ form {
   top: 40%;
   min-height: 15%;
 }
+
+#ant4 {
+  left: 5%;
+  width: 25%;
+  background-color: #00000055;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+  top: 60%;
+  min-height: 15%;
+}
