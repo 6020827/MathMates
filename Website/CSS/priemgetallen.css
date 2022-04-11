@@ -1,8 +1,8 @@
-body {
-  min-height: 100vh;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+ body{ 
+    min-height: 100vh; 
+    margin: 0; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -70,12 +70,10 @@ header {
   font-size: x-large;
 }
 
-#main {
-  font-family: "Maven Pro", sans-serif;
-  display: flex;
-  width: 100%;
-  column-gap: 5%;
-  font-size: large;
+#text{
+    flex: 3;
+    color: #68267f;
+    font-size: 70px;
 }
 
 #text {
