@@ -21,31 +21,9 @@ header {
 
 .logo {
   justify-content: flex-start;
-  width: 10%;
-  padding-left: 15.5%;
+  width: 25%;
+  padding-left: 20%;
   cursor: pointer;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: White;
-  font-family: "Maven Pro", sans-serif;
-  text-decoration: underline;
-  font-size: x-large;
-  width: 80%;
-}
-
-.navbar a {
-  font-family: "Maven Pro", sans-serif;
-  float: left;
-  font-size: 130%;
-  font-weight: bold;
-  color: #e73b55;
-  text-align: center;
-  padding: 14px 16px;
-  padding-left: 10%;
-  text-decoration: none;
-  font-size: x-large;
 }
 
 #nav a {
@@ -98,6 +76,28 @@ footer {
   padding: 14px 16px;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: White;
+  font-family: "Maven Pro", sans-serif;
+  text-decoration: underline;
+  font-size: x-large;
+  width: 60%;
+}
+
+.navbar a {
+  font-family: "Maven Pro", sans-serif;
+  float: left;
+  font-size: 130%;
+  font-weight: bold;
+  color: #e73b55;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 15%;
+  text-decoration: none;
+  font-size: x-large;
+}
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -142,4 +142,65 @@ footer {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+.slideshow-container {
+  height: 50%;
+  width: 40%;
+  position: absolute;
+  top: 23%;
+  right: 30%;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
