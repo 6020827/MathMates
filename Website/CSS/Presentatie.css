@@ -144,57 +144,54 @@ footer {
   display: block;
 }
 
-
-
-form{
+form {
   margin-left: 20%;
 }
 
-#plus{
+#plus {
   float: right;
   margin-right: 5%;
   margin-top: 10%;
 }
 
-#text{
+#text {
   color: #68267f;
   font-size: 70px;
   margin-left: 5%;
 }
 
-#number1{
+#number1 {
   padding: 7px;
   margin-right: 10px;
 }
 
-#number2{
+#number2 {
   padding: 7px;
   margin-right: 10px;
 }
-#button{
+#button {
   padding: 7px;
   padding-left: 17px;
   padding-right: 17px;
   margin-right: 10px;
   color: #68267f;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-weight: bold;
 }
-#textbox{
+#textbox {
   padding: 7px;
 }
-
-
 
 .slideshow-container {
   height: 50%;
   width: 40%;
   position: absolute;
-  top: 23%;
+  top: 18%;
   right: 30%;
 }
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -216,8 +213,9 @@ form{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -242,5 +240,9 @@ form{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
