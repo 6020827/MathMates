@@ -59,65 +59,66 @@
             
         </header>
         <main>
-            <h1 id="text">Min</h1>
+            <h1 id="text">Morsenizer</h1>
             <form name="rekenmachine">
                 <input name="num1" type="text" placeholder="Type hier je text in" id="veld1">
                 <input type="button" value="Bereken" onclick="myFunction()"id = "bereken1">
-                <div class="minnetje"><h1>In Morsecode</h1></div>
+                <div class="minnetje"></div>
+                <span id="ant3"></span>
             </form>
             <script>
                 function myFunction() {
-                    document.getElementById('ant').innerHTML = ""
+                    document.getElementById("ant3").innerHTML = ""
                     let length = rekenmachine.num1.value.length
                     for (let i = 0; i < length; i++) {
                         morse(rekenmachine.num1.value.substr(i, 1))
                     }
                 }
                 function morse(letter) {
-                    if (letter == "a" || letter == "A") document.getElementById('ant').innerHTML += " .- "
-                    if (letter == "b" || letter == "B") document.getElementById('ant').innerHTML += " -... "
-                    if (letter == "c" || letter == "C") document.getElementById('ant').innerHTML += " -.-. "
-                    if (letter == "d" || letter == "D") document.getElementById('ant').innerHTML += " -.. "
-                    if (letter == "e" || letter == "E") document.getElementById('ant').innerHTML += " --. "
-                    if (letter == "f" || letter == "F") document.getElementById('ant').innerHTML += " .... "
-                    if (letter == "g" || letter == "G") document.getElementById('ant').innerHTML += " .. "
-                    if (letter == "h" || letter == "H") document.getElementById('ant').innerHTML += " .--- "
-                    if (letter == "i" || letter == "I") document.getElementById('ant').innerHTML += " -.- "
-                    if (letter == "j" || letter == "J") document.getElementById('ant').innerHTML += " .-.. "
-                    if (letter == "k" || letter == "K") document.getElementById('ant').innerHTML += " -- "
-                    if (letter == "l" || letter == "L") document.getElementById('ant').innerHTML += " -. "
-                    if (letter == "m" || letter == "M") document.getElementById('ant').innerHTML += " -- "
-                    if (letter == "n" || letter == "N") document.getElementById('ant').innerHTML += " -. "
-                    if (letter == "o" || letter == "O") document.getElementById('ant').innerHTML += " --- "
-                    if (letter == "p" || letter == "P") document.getElementById('ant').innerHTML += " .--. "
-                    if (letter == "q" || letter == "Q") document.getElementById('ant').innerHTML += " --.- "
-                    if (letter == "r" || letter == "R") document.getElementById('ant').innerHTML += " .-. "
-                    if (letter == "s" || letter == "S") document.getElementById('ant').innerHTML += " ... "
-                    if (letter == "t" || letter == "T") document.getElementById('ant').innerHTML += " - "
-                    if (letter == "u" || letter == "U") document.getElementById('ant').innerHTML += " ..- "
-                    if (letter == "v" || letter == "V") document.getElementById('ant').innerHTML += " ...- "
-                    if (letter == "w" || letter == "W") document.getElementById('ant').innerHTML += " .-- "
-                    if (letter == "x" || letter == "X") document.getElementById('ant').innerHTML += " -..- "
-                    if (letter == "y" || letter == "Y") document.getElementById('ant').innerHTML += " -.-- "
-                    if (letter == "z" || letter == "Z") document.getElementById('ant').innerHTML += " --.. "
-                    if (letter == "0") document.getElementById('ant').innerHTML += " .---- "
-                    if (letter == "1") document.getElementById('ant').innerHTML += " ..--- "
-                    if (letter == "2") document.getElementById('ant').innerHTML += " ...-- "
-                    if (letter == "3") document.getElementById('ant').innerHTML += " ....- "
-                    if (letter == "4") document.getElementById('ant').innerHTML += " ..... "
-                    if (letter == "5") document.getElementById('ant').innerHTML += " -.... "
-                    if (letter == "6") document.getElementById('ant').innerHTML += " --... "
-                    if (letter == "7") document.getElementById('ant').innerHTML += " ---.. "
-                    if (letter == "8") document.getElementById('ant').innerHTML += " ----. "
-                    if (letter == "9") document.getElementById('ant').innerHTML += " ----- "
-                    if (letter == " ") document.getElementById('ant').innerHTML += " / "
+                    if (letter == "a" || letter == "A") document.getElementById("ant3").innerHTML += " .- "
+                    if (letter == "b" || letter == "B") document.getElementById("ant3").innerHTML += " -... "
+                    if (letter == "c" || letter == "C") document.getElementById("ant3").innerHTML += " -.-. "
+                    if (letter == "d" || letter == "D") document.getElementById("ant3").innerHTML += " -.. "
+                    if (letter == "e" || letter == "E") document.getElementById('ant3').innerHTML += " --. "
+                    if (letter == "f" || letter == "F") document.getElementById('ant3').innerHTML += " .... "
+                    if (letter == "g" || letter == "G") document.getElementById('ant3').innerHTML += " .. "
+                    if (letter == "h" || letter == "H") document.getElementById('ant3').innerHTML += " .--- "
+                    if (letter == "i" || letter == "I") document.getElementById('ant3').innerHTML += " -.- "
+                    if (letter == "j" || letter == "J") document.getElementById('ant3').innerHTML += " .-.. "
+                    if (letter == "k" || letter == "K") document.getElementById('ant3').innerHTML += " -- "
+                    if (letter == "l" || letter == "L") document.getElementById('ant3').innerHTML += " -. "
+                    if (letter == "m" || letter == "M") document.getElementById('ant3').innerHTML += " -- "
+                    if (letter == "n" || letter == "N") document.getElementById('ant3').innerHTML += " -. "
+                    if (letter == "o" || letter == "O") document.getElementById('ant3').innerHTML += " --- "
+                    if (letter == "p" || letter == "P") document.getElementById('ant3').innerHTML += " .--. "
+                    if (letter == "q" || letter == "Q") document.getElementById('ant3').innerHTML += " --.- "
+                    if (letter == "r" || letter == "R") document.getElementById('ant3').innerHTML += " .-. "
+                    if (letter == "s" || letter == "S") document.getElementById('ant3').innerHTML += " ... "
+                    if (letter == "t" || letter == "T") document.getElementById('ant3').innerHTML += " - "
+                    if (letter == "u" || letter == "U") document.getElementById('ant3').innerHTML += " ..- "
+                    if (letter == "v" || letter == "V") document.getElementById('ant3').innerHTML += " ...- "
+                    if (letter == "w" || letter == "W") document.getElementById('ant3').innerHTML += " .-- "
+                    if (letter == "x" || letter == "X") document.getElementById('ant3').innerHTML += " -..- "
+                    if (letter == "y" || letter == "Y") document.getElementById('ant3').innerHTML += " -.-- "
+                    if (letter == "z" || letter == "Z") document.getElementById('ant3').innerHTML += " --.. "
+                    if (letter == "0") document.getElementById('ant3').innerHTML += " .---- "
+                    if (letter == "1") document.getElementById('ant3').innerHTML += " ..--- "
+                    if (letter == "2") document.getElementById('ant3').innerHTML += " ...-- "
+                    if (letter == "3") document.getElementById('ant3').innerHTML += " ....- "
+                    if (letter == "4") document.getElementById('ant3').innerHTML += " ..... "
+                    if (letter == "5") document.getElementById('ant3').innerHTML += " -.... "
+                    if (letter == "6") document.getElementById('ant3').innerHTML += " --... "
+                    if (letter == "7") document.getElementById('ant3').innerHTML += " ---.. "
+                    if (letter == "8") document.getElementById('ant3').innerHTML += " ----. "
+                    if (letter == "9") document.getElementById('ant3').innerHTML += " ----- "
+                    if (letter == " ") document.getElementById('ant3').innerHTML += " / "
                     
                 }
             </script>
-            <span id="ant"></span>
+           
 
             <article id="plaatje"> 
-                <img id="min" src="Images/Min.png" alt="Min"> 
+                <img id="min" src="" alt=""> 
             </article>           
         </main>
         <footer>
