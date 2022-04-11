@@ -1,4 +1,4 @@
-body{ 
+ body{ 
     min-height: 100vh; 
     margin: 0; 
     display: grid;
@@ -81,6 +81,7 @@ header{
 #text{
     flex: 3;
     color: #68267f;
+    font-size: 70px;
 }
 
 #h1{
