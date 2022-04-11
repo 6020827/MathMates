@@ -8,55 +8,104 @@
         <meta name="keywords" content="">
         <meta name="author" content="Tim van Duijvenvoorde, Björn Borst, Dylan Hillebrand, Chloë Woldberg">
         <title>Math Mate</title>
-        <link rel="stylesheet" type="text/css" href="CSS/Presentatie.css">
+        <link rel="stylesheet" type="text/css" href="../AlaPP/Presentatie.css">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Maven+Pro&display=swap" rel="stylesheet">
+
+      
        
     </head>
     <body>
+    
         <header>
             <article class="logo">
                 <img src="Images/Logo.png" alt="Logo">   
             </article>
             <div class="navbar">
-                <a href="Home.html">Home</a>
-                <a href="Presentatie.html">Presentatie</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Berekeningen
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="Optellen.html">Optellen</a>
-                        <a href="Aftrekken.html">Aftrekken</a>
-                        <a href="Vermenigvuldigen.html">Vermenigvuldigen</a>
-                        <a href="Delen.html">Delen</a>
-                        <a href="Machtsverheffen.html">Machtsverheffen</a>
-                        <a href="Percentage.html">Percentage</a>
-                        <a href="Restwaarde.html">Restwaarde</a>
-                        <a href="Evenofoneven.html">Even OF Oneven</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Reeksen
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="tafels.html">Tafels</a>
-                        <a href="machten.html">Machten</a>
-                        <a href="breuken.html">Breuken</a>
-                        <a href="kwadraten.html">Kwadraten</a>
-                        <a href="Fibonacci.html">Fibonacci</a>
-                        <a href="priemgetallen.html">Priemgetallen</a>
-                        <a href="Collatz conjucture.html">Collatz Conjucture</a>
-                        <a href="perfect number.html">Perfect Number</a>
-                        <a href="Talstelsel.html">Talstelsels</a>
-                        <a href="Factorizer.html">Factorizer</a>
-                        <a href="Romanizer.html">Romanizer</a>
-                        <a href="Morsenizer.html">Morsenizer</a>
+              <a href="Home.html">Home</a>
+              <a href="Presentatie.html">Presentatie</a>
+              <div class="dropdown">
+                  <button class="dropbtn">Berekeningen
+                      <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                      <a href="Optellen.html">Optellen</a>
+                      <a href="Aftrekken.html">Aftrekken</a>
+                      <a href="Vermenigvuldigen.html">Vermenigvuldigen</a>
+                      <a href="Delen.html">Delen</a>
+                      <a href="Machtsverheffen.html">Machtsverheffen</a>
+                      <a href="Percentage.html">Percentage</a>
+                      <a href="Restwaarde.html">Restwaarde</a>
+                      <a href="Evenofoneven.html">Even OF Oneven</a>
+                  </div>
+              </div>
+          </div>
 
-                    </div>
-                </div>
-            </div>
-            
+              <!--body data-->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="../AlaPP/Images/download.boom.jfif" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="../AlaPP/Images/istockphoto-517188688-612x612grass.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="../AlaPP/Images/photo-1541963463532-d68292c34b19book.jfif" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="../AlaPP/Images/wuter.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="../AlaPP/Images/vlinder.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="../AlaPP/Images/Natuur.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
         </header>
         <main>
             
