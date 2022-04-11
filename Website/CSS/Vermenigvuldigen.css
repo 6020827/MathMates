@@ -182,26 +182,9 @@ form{
     font-size: 70px;
     margin-left: 5%;
 }
-
-#number1{
-    padding: 7px;
-    margin-right: 10px;
-}
-
-#number2{
-    padding: 7px;
-    margin-right: 10px;
-    padding-left: 8px;
-}
 #button{
-    padding: 7px;
-    padding-left: 17px;
-    padding-right: 17px;
     margin-right: 10px;
     color: #68267f;
     font-family: 'Maven Pro', sans-serif;
     font-weight: bold;
-}
-#textbox{
-    padding: 7px;
 }
