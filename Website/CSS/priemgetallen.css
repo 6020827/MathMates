@@ -1,8 +1,8 @@
- body{ 
-    min-height: 100vh; 
-    margin: 0; 
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -70,16 +70,17 @@ header {
   font-size: x-large;
 }
 
-#text{
-    flex: 3;
-    color: #68267f;
-    font-size: 70px;
+#main {
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  width: 100%;
+  column-gap: 5%;
+  font-size: large;
 }
 
 #text {
+  flex: 3;
   color: #68267f;
-  font-size: 70px;
-  margin-left: 5%;
 }
 
 #h1 {
@@ -169,39 +170,82 @@ form {
   margin-left: 20%;
 }
 
-#priem {
+#min {
   float: right;
   margin-right: 5%;
   margin-top: 10%;
 }
 
 #text {
-  color: #68267f;
-  font-size: 70px;
   margin-left: 5%;
-}
-
-#number1 {
-  padding: 7px;
-  margin-right: 10px;
-}
-
-#number2 {
-  padding: 7px;
-  margin-right: 10px;
-  padding-left: 8px;
+  font-size: 70px;
 }
 
 #button {
-  padding: 7px;
-  padding-left: 17px;
-  padding-right: 17px;
   margin-right: 10px;
   color: #68267f;
-  font-family: "Maven Pro", sans-serif;
-  font-weight: bold;
 }
 
-#textbox {
-  padding: 7px;
+#ant {
+  left: 5%;
+  width: 25%;
+  background-color: #00000055;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+  top: 70%;
+  min-height: 15%;
+}
+
+#ant2 {
+  left: 5%;
+  width: 25%;
+  background-color: #00000055;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+  top: 40%;
+  min-height: 15%;
+}
+
+#ant3 {
+  left: 5%;
+  width: 25%;
+  background-color: #00000055;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+  top: 40%;
+  min-height: 15%;
+}
+
+#ant4 {
+  left: 5%;
+  width: 25%;
+  background-color: #00000055;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 15px;
+  position: absolute;
+  top: 60%;
+  min-height: 15%;
 }

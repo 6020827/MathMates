@@ -93,11 +93,11 @@ footer{
     color: #e73b55;
     font-weight: bold;
     font-size: 130%;
-  }
-  
-  #nav {
-    width: 50%;
-  }
+}
+
+#nav {
+width: 50%;
+}
   
 
 .navbar a:hover{
@@ -185,6 +185,4 @@ form{
 #button{
     margin-right: 10px;
     color: #68267f;
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: bold;
 }

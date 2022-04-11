@@ -1,80 +1,85 @@
-body{ 
-    min-height: 100vh; 
-    margin: 0; 
+body {
+    min-height: 100vh;
+    margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-}
+  }
   
-header{
+  header {
     min-height: 50px;
     display: flex;
     width: 100%;
     border-bottom: 2px solid rgba(156, 156, 156, 0.89);
     align-items: center;
     margin: auto;
-}
-
-.logo img{
+  }
+  
+  .logo img {
     width: 120px;
-}
-
-.logo{
+  }
+  
+  .logo {
     justify-content: flex-start;
     width: 10%;
     padding-left: 15.5%;
     cursor: pointer;
-}
-
-#main{
-    font-family: 'Maven Pro', sans-serif;
+  }
+  
+  #main {
+    font-family: "Maven Pro", sans-serif;
     display: flex;
     width: 100%;
     column-gap: 5%;
     font-size: large;
-}
-
-#text{
+  }
+  
+  #text {
     flex: 3;
     color: #68267f;
-}
-
-#h1{
+  }
+  
+  #h1 {
     font-size: 300%;
     text-decoration: underline;
-}
-
-#image{
+  }
+  
+  #image {
     flex: 2;
     padding-top: 4%;
-}
-
-footer{ 
+  }
+  
+  footer {
     min-height: 75px;
-}
-
-#footer{
+  }
+  
+  #footer {
     border-top: 2px solid rgb(128, 128, 128);
     width: 30%;
     margin: auto;
     text-align: center;
-}
-
-.icons{
+  }
+  
+  .icons {
     width: 3rem;
     padding: 2%;
-}
-
-.navbar {
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+    font-size: x-large;
+  }
+  
+  .navbar {
     overflow: hidden;
     background-color: White;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     text-decoration: underline;
     font-size: x-large;
     width: 80%;
-}
-
-.navbar a {
-    font-family: 'Maven Pro', sans-serif;
+  }
+  
+  .navbar a {
+    font-family: "Maven Pro", sans-serif;
     float: left;
     font-size: 130%;
     font-weight: bold;
@@ -84,9 +89,9 @@ footer{
     padding-left: 10%;
     text-decoration: none;
     font-size: x-large;
-}
-
-#nav a {
+  }
+  
+  #nav a {
     text-decoration: none;
     font-family: "Maven Pro", sans-serif;
     padding-left: 15%;
@@ -98,34 +103,29 @@ footer{
   #nav {
     width: 50%;
   }
-
-.navbar a:hover{
+  
+  .navbar :hover {
     text-decoration: underline;
     font-size: x-large;
-}
-
-.navbar :hover{
+  }
+  
+  .dropbtn :hover {
     text-decoration: underline;
     font-size: x-large;
-}
-
-.dropbtn :hover{
-    text-decoration: underline;
-    font-size: x-large;
-}
-
-.dropbtn a{
+  }
+  
+  .dropbtn a {
     font-size: x-large;
     padding-left: 15%;
     padding: 14px 16px;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     float: left;
     overflow: hidden;
-}
+  }
   
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
     font-size: x-large;
     border: none;
     outline: none;
@@ -134,69 +134,62 @@ footer{
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-weight: 900;
     padding-left: 90px;
     width: 110%;
-}
+  }
   
-.dropdown-content {
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
+  }
   
-.dropdown-content a {
+  .dropdown-content a {
     float: none;
-    color: #e73b55;;
+    color: #e73b55;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
+  }
   
-.dropdown:hover .dropdown-content {
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-
-form{
+  }
+  
+  
+  form {
     margin-left: 20%;
-}
-
-#restwaarde{
+  }
+  
+  #tafels {
     float: right;
     margin-right: 5%;
-    margin-top: 2%;
-    width: 25%;
-}
-
-#text{
+    margin-top: 10%;
+  }
+  
+  #text {
     color: #68267f;
     font-size: 70px;
     margin-left: 5%;
-}
-
-#number1{
-    padding: 7px;
-    margin-right: 10px;
-}
-
-#number2{
-    padding: 7px;
-    margin-right: 10px;
-}
-#button{
+  }
+  
+  #button {
     margin-right: 10px;
     color: #68267f;
-}
-#textbox{
-    padding: 7px;
-}
+  }
+  
+  /*#result {
+    margin-left: 3vw;
+  }
+  */
+  

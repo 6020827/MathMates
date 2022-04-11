@@ -183,13 +183,8 @@ form {
 }
 
 #button {
-  padding: 7px;
-  padding-left: 17px;
-  padding-right: 17px;
   margin-right: 10px;
   color: #68267f;
-  font-family: "Maven Pro", sans-serif;
-  font-weight: bold;
 }
 
 #textbox {
